@@ -11,6 +11,7 @@ end
 
 def get_japanese_emoticon(path, emote)
   data = load_library(path)
+<<<<<<< HEAD
   translation = data.reduce(nil) do |memo, (key, value)|
   	if(emote == value[:english])
   		memo = value[:japanese].to_s
@@ -21,6 +22,10 @@ def get_japanese_emoticon(path, emote)
   	translation = "Sorry, that emoticon was not found"
   end
   translation 
+=======
+  
+
+>>>>>>> 4929f07260e8984d3c67dd946ad3ed98d052b658
 end
 
 def get_english_meaning(path, emote)
